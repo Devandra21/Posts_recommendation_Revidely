@@ -10,8 +10,12 @@ The dataset contains:
 7) Shares are random integers between 0 to 40 using kutools.
 8) Time spent per posts are random real numbers between 1 to 60 seconds using kutools.
 9) link opened are assigned randomly 0 or 1 or 2, 0 for no link present , 1 for link present but not opening , 2 for link present and opening.
-Finally a new score is given based on the formula:
+
+
+Finally a new score is given based on the formula:-
 Score = (.5)*(views) + (.38)*(upvote) + (-.14)*(downvote) + (.21)*(Comments) + (.16)*(Shares) + (-.15)*(timespent) + (.04)*(link opened)
+
+
 Reasons to assign such values:
 1) All the coeffiecients sum to 1.
 2) All the variables used are normalized variables.
@@ -23,7 +27,7 @@ Reasons to assign such values:
 8) Negative weight is assigned to timespent as accordinf to data timespend shows the amount of time spent by people and if amount of time spent on a post is less the users can see more posts ,so negative weight is assigned.
 9) If a link is present in a post and if it is opened or not contributes very less to recommend a post so least weight is given to it.
 
-Finally Posts are predicted using the user-user similarity.
+Finally Posts are predicted using the user-user similarity and using cosine function.
 
 The Sheet Raw_data has all the data.
 The Sheet Predicted_output has all the user ids with there predicted output.
