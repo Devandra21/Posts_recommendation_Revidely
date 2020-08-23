@@ -24,7 +24,7 @@ Reasons to assign such values:
 5) Negative weight is assigned to downvote because a negative impression is considered less and negative vies of people will make the post less recommended.
 6) More commented post can attract people.
 7) Sharing will also bring attention of people so it is also important variable.
-8) Negative weight is assigned to timespent as accordinf to data timespend shows the amount of time spent by people and if amount of time spent on a post is less the users can see more posts ,so negative weight is assigned.
+8) Negative weight is assigned to timespent as according to data timespend shows the amount of time spent by people and if amount of time spent on a post is less the users can see more posts ,so negative weight is assigned.
 9) If a link is present in a post and if it is opened or not contributes very less to recommend a post so least weight is given to it.
 
 Finally Posts are predicted using the user-user similarity and using cosine function.
